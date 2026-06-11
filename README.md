@@ -2,10 +2,13 @@
 
 ## Formulae
 
+* `floating-ips`
+* `mips-linux-gnu-binutils`
+* `mips-linux-gnu-gcc`
 * `mips64-elf-binutils`
 * `mips64-elf-gcc`
-* `mips-linux-gnu-gcc`
-* `qemu-irix`
+* `nxdumpclient`
+* `pacman`
 
 ## How do I install these formulae?
 `brew tap hoverAdev/formulae` and then `brew install <formula>`.

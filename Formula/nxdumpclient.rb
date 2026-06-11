@@ -1,9 +1,8 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://docs.brew.sh/rubydoc/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Nxdumpclient < Formula
   desc "A client program for dumping over USB with nxdumptool"
   homepage "https://github.com/v1993/nxdumpclient"
+  url "https://github.com/v1993/nxdumpclient/archive/refs/tags/v1.1.4.tar.gz"
+  sha256 "114b1b303063611bfbba247f03c5d93e2f4cc9f03711a693b1ccb5509b0b66c1"
   license "GPL-3.0"
   head "https://github.com/v1993/nxdumpclient.git", branch: "main"
 
@@ -27,15 +26,6 @@ class Nxdumpclient < Formula
   end
 
   test do
-    # `test do` will create, run in and delete a temporary directory.
-    #
-    # This test will fail and we won't accept that! For Homebrew/homebrew-core
-    # this will need to be a test that verifies the functionality of the
-    # software. Run the test with `brew test nxdumpclient`. Options passed
-    # to `brew install` such as `--HEAD` also need to be provided to `brew test`.
-    #
-    # The installed folder is not in the path, so use the entire path to any
-    # executables being tested: `system bin/"program", "do", "something"`.
-    system "true"
+    system "nxdumpclient --help"
   end
 end
